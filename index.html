@@ -64,20 +64,25 @@
       <section>
         <h2>Place Your Order</h2>
 
-        <form>
+        <form action="http://requestb.in/p4zbwnp5" method="post">
           <fieldset>
             <legend>Item Details</legend>
             <aside>
-              <label>Item Type</label>
-              <input>
+              <label for="item-type">Item Type</label>
+              <input type="text" name="ItemType" id="item-type" placeholder="Awesome Widget">
             </aside>
             <aside>
-              <label>Quantity</label>
-              <input>
+              Quantity
+              <input type="number" min="1">
             </aside>
             <aside>
-              <label>Gift wrap?</label>
-              <input>
+              Gift wrap?
+              <label>
+                <input type="radio" name="GiftWrap" value="yes">
+                Yes
+              <label>
+                <input type="radio" name="GiftWrap" value="no">
+                No
             </aside>
           </fieldset>
 
@@ -92,12 +97,12 @@
               <input type="email" name="email" id="email" placeholder="tina@belcher.com" required>
             </aside>
             <aside>
-              <label>Credit Card</label>
-              <input>
+              <label for="credit-card">Credit Card</label>
+              <input type="text" name="CreditCardInfo" id="credit-card" placeholder="xxxx-xxxx-xxxx-xxxx">
             </aside>
             <aside>
-              <label>Expiration</label>
-              <input>
+              <label type="expiration">Expiration</label>
+              <input type="text" name="ExpirationDate" id="expiration" placeholder="February 2018">
             </aside>
           </fieldset>
         </form>
