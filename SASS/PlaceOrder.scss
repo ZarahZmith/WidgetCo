@@ -1,0 +1,23 @@
+.PlaceOrder {
+  background-color: $placeOrderBG;
+  h2 {
+    margin: 0;
+  }
+  fieldset {
+    border: 1px solid $fieldsetBackBord;
+    background-color: #ffffff;
+    margin: 1em;
+  }
+  legend {
+    background-color: $fieldsetBackBord;
+    color: $legendText;
+    margin: 0;
+  }
+  aside {
+    margin: 1em;
+  }
+  p {
+    margin: 0;
+    padding: 1em;
+  }
+}

@@ -1,0 +1,14 @@
+.OurWidgets {
+  background-color: $ourWidgetBC;
+  color: $themeText;
+  .badge {
+    color: $widgetbadgetext;
+    background-color: $widgetbadge;
+  }
+  ul {
+    margin: 1em;
+  }
+  p {
+    margin: 0;
+  }
+}
