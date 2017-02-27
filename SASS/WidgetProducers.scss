@@ -3,7 +3,9 @@
   .pictures {
     display: flex;
     flex-wrap: wrap;
-
+  }
+  h2 {
+    padding: 1em;
   }
   img{
     flex: 0 0 25%;
