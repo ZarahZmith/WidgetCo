@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Widget Co</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -51,13 +53,18 @@
         select your favorites. Then you can order them using the form below.</p>
         <p><!-- New widgets being added all the time!, button w/ alert --></p>
         <ul class="widgets">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li class="glyphicon glyphicon-headphones">24</li>
+          <li class="glyphicon glyphicon-screenshot">10</li>
+          <li class="glyphicon glyphicon-dashboard">33</li>
+          <li class="glyphicon glyphicon-compressed">67</li>
+          <li class="glyphicon glyphicon-knight">2</li>
         </ul>
-        <!-- page selector, possibly a nav -->
+        <ul>
+          <li><a href=#>1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+        </ul>
         <p>^go to top</p>
       </section>
 
@@ -68,8 +75,12 @@
           <fieldset>
             <legend>Item Details</legend>
             <aside>
-              <label for="item-type">Item Type</label>
-              <input type="text" name="ItemType" id="item-type" placeholder="Awesome Widget">
+              Item Type
+              <select id="item-type">
+                <option name="Awesome Widget" for="item-type">Awesome Widget</option>
+                <option name="SupremeWidget" for="item-type">Supereme Widget</option>
+                <option name="UltimateWidget" for="item-type">Ultimate Widget</option>
+              </select>
             </aside>
             <aside>
               Quantity
@@ -100,15 +111,15 @@
             </aside>
             <aside>
               <label for="credit-card">Credit Card</label>
-              <input type="text" name="CreditCardInfo" id="credit-card" placeholder="xxxx-xxxx-xxxx-xxxx">
+              <input type="text" name="CreditCardInfo" id="credit-card" placeholder="xxxx-xxxx-xxxx-xxxx" required>
             </aside>
             <aside>
-              <label type="expiration">Expiration</label>
-              <input type="text" name="ExpirationDate" id="expiration" placeholder="February 2018">
+              Expiration Date
+              <input type="month" name="ExpirationDate" placeholder="February 2018">
             </aside>
           </fieldset>
         </form>
-        <!-- this is a button, not sure what tag to give it, perhaps a -->
+        <input type="submit" value="Confirm Order" class="selector">
         <p>^go to top</p>
       </section>
 
