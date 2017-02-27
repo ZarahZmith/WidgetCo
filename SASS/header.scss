@@ -1,0 +1,15 @@
+header {
+  background-color: $headerBackgroundColor;
+  color: $headerText;
+  display: flex;
+  nav {
+    color: $navColor;
+  }
+  li {
+    margin: 1em;
+  }
+  ul li:hover {
+    background-color: $navHoverBackground;
+    color: $navHoverColor;
+  }
+}
